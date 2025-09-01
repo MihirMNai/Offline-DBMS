@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +33,7 @@
             padding: 5px 0;
             margin-bottom: 15px;
             border-radius: 0px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
 
         .header h1 {
@@ -40,7 +41,7 @@
             font-size: 1.5rem;
             font-weight: 700;
             color: #2c3e50;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .status-bar {
@@ -48,7 +49,7 @@
             padding: 15px 20px;
             border-radius: 10px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -82,7 +83,7 @@
             border-radius: 15px;
             overflow: hidden;
             margin-bottom: 25px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
         }
 
@@ -132,7 +133,7 @@
             background: rgba(255, 255, 255, 0.95);
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
             margin-bottom: 20px;
         }
@@ -143,8 +144,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .form-group {
@@ -159,7 +167,9 @@
             font-size: 14px;
         }
 
-        .form-group input, .form-group select, .form-group textarea {
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
             width: 100%;
             padding: 12px 15px;
             border: 2px solid #e9ecef;
@@ -169,7 +179,9 @@
             background: white;
         }
 
-        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
             outline: none;
             border-color: #667eea;
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
@@ -221,7 +233,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: left 0.5s;
         }
 
@@ -273,7 +285,7 @@
             overflow-x: auto;
             margin-top: 25px;
             border-radius: 15px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
             background: white;
         }
 
@@ -283,7 +295,8 @@
             background: white;
         }
 
-        th, td {
+        th,
+        td {
             padding: 15px 12px;
             text-align: left;
             border-bottom: 1px solid #e9ecef;
@@ -355,8 +368,15 @@
         }
 
         @keyframes slideIn {
-            from { transform: translateX(-100%); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
 
         .message.success {
@@ -377,12 +397,13 @@
             border-left: 4px solid #ffc107;
         }
 
-        .search-section, .join-section {
+        .search-section,
+        .join-section {
             background: linear-gradient(135deg, #f8f9fa, #e9ecef);
             padding: 25px;
             border-radius: 15px;
             margin-bottom: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .join-type-selector {
@@ -486,14 +507,16 @@
             color: #1976d2;
         }
 
-        .column-input input, .column-input select {
+        .column-input input,
+        .column-input select {
             padding: 8px 12px;
             border: 1px solid #90caf9;
             border-radius: 5px;
             font-size: 13px;
         }
 
-        .column-input input:focus, .column-input select:focus {
+        .column-input input:focus,
+        .column-input select:focus {
             outline: none;
             border-color: #2196f3;
             box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
@@ -521,41 +544,77 @@
             margin-bottom: 20px;
         }
 
-        
+        .footer {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            color: #2c3e50;
+            padding: 5px 0;
+            margin-top: 65px;
+            border-radius: 0px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-divider {
+            width: 1px;
+            height: 20px;
+            background: #e9ecef;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
             }
-            
+
             .header h1 {
                 font-size: 1.8rem;
             }
-            
+
             .form-row {
                 flex-direction: column;
             }
-            
+
             .form-row .form-group {
                 min-width: 100%;
             }
-            
+
             .button-row {
                 justify-content: center;
             }
-            
+
             .tabs {
                 flex-direction: column;
             }
-            
+
             .tab {
                 padding: 15px;
             }
-            
+
             .status-bar {
                 flex-direction: column;
                 align-items: stretch;
             }
-            
+
             .join-type-selector {
                 justify-content: center;
                 gap: 8px;
@@ -566,7 +625,7 @@
                 font-size: 13px;
                 min-width: 100px;
             }
-            
+
             .column-inputs {
                 grid-template-columns: 1fr;
             }
@@ -602,6 +661,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="header">
         <div class="container">
@@ -653,7 +713,7 @@
                 <button class="btn btn-primary" onclick="createDatabase()">➕ Create Database</button>
                 <button class="btn btn-success" onclick="exportAllData()">📥 Export All Data (CSV)</button>
             </div>
-            
+
             <div class="table-container">
                 <table id="databasesTable">
                     <thead>
@@ -685,7 +745,7 @@
                     <input type="text" id="tableName" placeholder="Enter table name (e.g., Users, Products)">
                 </div>
             </div>
-            
+
             <div id="columnsContainer">
                 <h3>📝 Define Columns</h3>
                 <div id="columnsList"></div>
@@ -694,7 +754,7 @@
                     <button class="btn btn-primary" onclick="createTable()">📋 Create Table</button>
                 </div>
             </div>
-            
+
             <div class="table-container">
                 <table id="tablesTable">
                     <thead>
@@ -728,7 +788,7 @@
                     </select>
                 </div>
             </div>
-            
+
             <!-- Add Row Form -->
             <div id="addRowForm" class="add-row-form" style="display: none;">
                 <h4>➕ Add New Row</h4>
@@ -738,13 +798,13 @@
                     <button class="btn btn-warning" onclick="cancelAddRow()">❌ Cancel</button>
                 </div>
             </div>
-            
+
             <div class="button-row">
                 <button class="btn btn-primary" onclick="showAddRowForm()">➕ Add Row</button>
                 <button class="btn btn-danger" onclick="deleteSelectedRows()">🗑️ Delete Selected</button>
                 <button class="btn btn-warning" onclick="exportTableData()">📥 Export Table</button>
             </div>
-            
+
             <div class="table-container">
                 <table id="dataTable">
                     <thead></thead>
@@ -753,39 +813,39 @@
             </div>
         </div>
 
-                 <!-- Search Tab -->
-         <div id="search" class="tab-content">
-             <h2>🔍 Search & Filter</h2>
-             <div class="search-section">
-                 <div class="form-row">
-                     <div class="form-group">
-                         <label for="searchDb">Database:</label>
-                         <select id="searchDb" onchange="loadTablesForSearch()">
-                             <option value="">Choose a database...</option>
-                         </select>
-                     </div>
-                     <div class="form-group">
-                         <label for="searchTable">Table:</label>
-                         <select id="searchTable" onchange="loadColumnsForSearch()">
-                             <option value="">Choose a table...</option>
-                         </select>
-                     </div>
-                     <div class="form-group">
-                         <label for="searchColumn">Column:</label>
-                         <select id="searchColumn">
-                             <option value="">Choose a column...</option>
-                         </select>
-                     </div>
-                     <div class="form-group">
-                         <label for="searchValue">Search Value:</label>
-                         <input type="text" id="searchValue" placeholder="Enter search term...">
-                     </div>
-                 </div>
-                 <div class="button-row">
-                     <button class="btn btn-primary" onclick="searchData()">🔍 Search</button>
-                 </div>
-             </div>
-            
+        <!-- Search Tab -->
+        <div id="search" class="tab-content">
+            <h2>🔍 Search & Filter</h2>
+            <div class="search-section">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="searchDb">Database:</label>
+                        <select id="searchDb" onchange="loadTablesForSearch()">
+                            <option value="">Choose a database...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="searchTable">Table:</label>
+                        <select id="searchTable" onchange="loadColumnsForSearch()">
+                            <option value="">Choose a table...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="searchColumn">Column:</label>
+                        <select id="searchColumn">
+                            <option value="">Choose a column...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="searchValue">Search Value:</label>
+                        <input type="text" id="searchValue" placeholder="Enter search term...">
+                    </div>
+                </div>
+                <div class="button-row">
+                    <button class="btn btn-primary" onclick="searchData()">🔍 Search</button>
+                </div>
+            </div>
+
             <div class="table-container">
                 <table id="searchResultsTable">
                     <thead></thead>
@@ -794,55 +854,55 @@
             </div>
         </div>
 
-                 <!-- Join Tab -->
-         <div id="join" class="tab-content">
-             <h2>🔗 Table Join Operations</h2>
-             <div class="join-section">
-                 <div class="join-type-selector">
-                     <button class="join-type-btn active" onclick="setJoinType('inner')">INNER JOIN</button>
-                     <button class="join-type-btn" onclick="setJoinType('left')">LEFT JOIN</button>
-                     <button class="join-type-btn" onclick="setJoinType('right')">RIGHT JOIN</button>
-                 </div>
-                 
-                 <div class="form-row">
-                     <div class="form-group">
-                         <label for="joinDb">Database:</label>
-                         <select id="joinDb" onchange="loadTablesForJoin()">
-                             <option value="">Choose a database...</option>
-                         </select>
-                     </div>
-                     <div class="form-group">
-                         <label for="joinTableA">Table A:</label>
-                         <select id="joinTableA" onchange="loadColumnsForJoinA()">
-                             <option value="">Choose Table A...</option>
-                         </select>
-                     </div>
-                     <div class="form-group">
-                         <label for="joinColumnA">Column A:</label>
-                         <select id="joinColumnA">
-                             <option value="">Choose Column A...</option>
-                         </select>
-                     </div>
-                 </div>
-                 <div class="form-row">
-                     <div class="form-group">
-                         <label for="joinTableB">Table B:</label>
-                         <select id="joinTableB" onchange="loadColumnsForJoinB()">
-                             <option value="">Choose Table B...</option>
-                         </select>
-                     </div>
-                     <div class="form-group">
-                         <label for="joinColumnB">Column B:</label>
-                         <select id="joinColumnB">
-                             <option value="">Choose Column B...</option>
-                         </select>
-                     </div>
-                 </div>
-                 <div class="button-row">
-                     <button class="btn btn-primary" onclick="performJoin()">🔗 Perform Join</button>
-                 </div>
-             </div>
-            
+        <!-- Join Tab -->
+        <div id="join" class="tab-content">
+            <h2>🔗 Table Join Operations</h2>
+            <div class="join-section">
+                <div class="join-type-selector">
+                    <button class="join-type-btn active" onclick="setJoinType('inner')">INNER JOIN</button>
+                    <button class="join-type-btn" onclick="setJoinType('left')">LEFT JOIN</button>
+                    <button class="join-type-btn" onclick="setJoinType('right')">RIGHT JOIN</button>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="joinDb">Database:</label>
+                        <select id="joinDb" onchange="loadTablesForJoin()">
+                            <option value="">Choose a database...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="joinTableA">Table A:</label>
+                        <select id="joinTableA" onchange="loadColumnsForJoinA()">
+                            <option value="">Choose Table A...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="joinColumnA">Column A:</label>
+                        <select id="joinColumnA">
+                            <option value="">Choose Column A...</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="joinTableB">Table B:</label>
+                        <select id="joinTableB" onchange="loadColumnsForJoinB()">
+                            <option value="">Choose Table B...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="joinColumnB">Column B:</label>
+                        <select id="joinColumnB">
+                            <option value="">Choose Column B...</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="button-row">
+                    <button class="btn btn-primary" onclick="performJoin()">🔗 Perform Join</button>
+                </div>
+            </div>
+
             <div class="table-container">
                 <table id="joinResultsTable">
                     <thead></thead>
@@ -852,7 +912,24 @@
         </div>
     </div>
 
-    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <span style="font-size:1.3em;">🚀</span>
+                    <span style="font-weight:700;">Enhanced Offline DBMS</span>
+                    <div class="footer-divider"></div>
+                    <span style="font-size:0.95em;font-weight:400;">Fast. Private. Powerful.</span>
+                </div>
+                <div class="footer-right">
+                    <span>© 2025 All Rights Reserved</span>
+                    <div class="footer-divider"></div>
+                    <span>Developed by Mihir</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         // Global variables
@@ -864,7 +941,7 @@
         let currentTable = '';
 
         // Initialize the application
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             loadDatabases();
             refreshDatabasesTable();
             loadRecentTables();
@@ -877,19 +954,19 @@
             // Hide all tab contents
             const tabContents = document.querySelectorAll('.tab-content');
             tabContents.forEach(content => content.classList.remove('active'));
-            
+
             // Remove active class from all tabs
             const tabs = document.querySelectorAll('.tab');
             tabs.forEach(tab => tab.classList.remove('active'));
-            
+
             // Show selected tab content
             document.getElementById(tabName).classList.add('active');
-            
+
             // Add active class to clicked tab
             event.target.classList.add('active');
-            
+
             // Refresh data based on tab
-            switch(tabName) {
+            switch (tabName) {
                 case 'databases':
                     refreshDatabasesTable();
                     break;
@@ -953,17 +1030,17 @@
                 showMessage('Please enter a database name', 'error');
                 return;
             }
-            
+
             if (databases[dbName]) {
                 showMessage('Database already exists', 'error');
                 return;
             }
-            
+
             databases[dbName] = {
                 tables: {},
                 created: new Date().toISOString()
             };
-            
+
             saveDatabases();
             document.getElementById('dbName').value = '';
             refreshDatabasesTable();
@@ -994,12 +1071,12 @@
         function refreshDatabasesTable() {
             const tbody = document.querySelector('#databasesTable tbody');
             tbody.innerHTML = '';
-            
+
             Object.keys(databases).forEach(dbName => {
                 const tableCount = Object.keys(databases[dbName].tables).length;
                 const rowCount = Object.values(databases[dbName].tables).reduce((sum, table) => sum + table.data.length, 0);
                 const createdDate = new Date(databases[dbName].created).toLocaleDateString();
-                
+
                 const row = tbody.insertRow();
                 row.innerHTML = `
                     <td>${dbName}</td>
@@ -1021,7 +1098,7 @@
             columnDiv.style.display = 'flex';
             columnDiv.style.gap = '10px';
             columnDiv.style.alignItems = 'end';
-            
+
             columnDiv.innerHTML = `
                 <input type="text" placeholder="Column name" class="column-name" style="flex: 2;">
                 <select class="column-type" style="flex: 1;">
@@ -1031,52 +1108,52 @@
                 </select>
                 <button class="btn btn-danger" onclick="this.parentElement.remove()">Remove</button>
             `;
-            
+
             columnsList.appendChild(columnDiv);
         }
 
         function createTable() {
             const dbName = document.getElementById('tableDb').value;
             const tableName = document.getElementById('tableName').value.trim();
-            
+
             if (!dbName) {
                 showMessage('Please select a database', 'error');
                 return;
             }
-            
+
             if (!tableName) {
                 showMessage('Please enter a table name', 'error');
                 return;
             }
-            
+
             const columns = [];
             const columnDivs = document.querySelectorAll('#columnsList .form-group');
-            
+
             columnDivs.forEach(div => {
                 const name = div.querySelector('.column-name').value.trim();
                 const type = div.querySelector('.column-type').value;
-                
+
                 if (name) {
                     columns.push({ name, type });
                 }
             });
-            
+
             if (columns.length === 0) {
                 showMessage('Please add at least one column', 'error');
                 return;
             }
-            
+
             if (databases[dbName].tables[tableName]) {
                 showMessage('Table already exists in this database', 'error');
                 return;
             }
-            
+
             databases[dbName].tables[tableName] = {
                 columns: columns,
                 data: [],
                 created: new Date().toISOString()
             };
-            
+
             saveDatabases();
             addToRecentTables(dbName, tableName);
             document.getElementById('tableName').value = '';
@@ -1098,15 +1175,15 @@
             const dbName = document.getElementById('tableDb').value;
             const tbody = document.querySelector('#tablesTable tbody');
             tbody.innerHTML = '';
-            
+
             if (!dbName || !databases[dbName]) return;
-            
+
             Object.keys(databases[dbName].tables).forEach(tableName => {
                 const table = databases[dbName].tables[tableName];
                 const columnCount = table.columns.length;
                 const rowCount = table.data.length;
                 const createdDate = new Date(table.created).toLocaleDateString();
-                
+
                 const row = tbody.insertRow();
                 row.innerHTML = `
                     <td>${tableName}</td>
@@ -1124,20 +1201,20 @@
         function showAddRowForm() {
             const dbName = document.getElementById('dataDb').value;
             const tableName = document.getElementById('dataTable').value;
-            
+
             if (!dbName || !tableName) {
                 showMessage('Please select database and table first', 'error');
                 return;
             }
-            
+
             const table = databases[dbName].tables[tableName];
             const columnInputs = document.getElementById('columnInputs');
             columnInputs.innerHTML = '';
-            
+
             table.columns.forEach(column => {
                 const columnDiv = document.createElement('div');
                 columnDiv.className = 'column-input';
-                
+
                 let inputHtml = '';
                 if (column.type === 'date') {
                     inputHtml = `<input type="date" id="new_${column.name}" placeholder="${column.name}">`;
@@ -1146,42 +1223,42 @@
                 } else {
                     inputHtml = `<input type="text" id="new_${column.name}" placeholder="${column.name}">`;
                 }
-                
+
                 columnDiv.innerHTML = `
                     <label for="new_${column.name}">${column.name} (${column.type})</label>
                     ${inputHtml}
                 `;
                 columnInputs.appendChild(columnDiv);
             });
-            
+
             document.getElementById('addRowForm').style.display = 'block';
         }
 
         function saveNewRow() {
             const dbName = document.getElementById('dataDb').value;
             const tableName = document.getElementById('dataTable').value;
-            
+
             if (!dbName || !tableName) {
                 showMessage('Please select database and table', 'error');
                 return;
             }
-            
+
             const table = databases[dbName].tables[tableName];
             const newRow = {};
             let hasData = false;
-            
+
             table.columns.forEach(column => {
                 const input = document.getElementById(`new_${column.name}`);
                 const value = input ? input.value : '';
                 newRow[column.name] = value;
                 if (value) hasData = true;
             });
-            
+
             if (!hasData) {
                 showMessage('Please enter at least one value', 'warning');
                 return;
             }
-            
+
             table.data.push(newRow);
             saveDatabases();
             cancelAddRow();
@@ -1204,17 +1281,17 @@
                 showMessage('Please select rows to delete', 'error');
                 return;
             }
-            
+
             if (confirm(`Are you sure you want to delete ${selectedRows.size} selected row(s)?`)) {
                 const dbName = document.getElementById('dataDb').value;
                 const tableName = document.getElementById('dataTable').value;
                 const table = databases[dbName].tables[tableName];
-                
+
                 const sortedIndices = Array.from(selectedRows).sort((a, b) => b - a);
                 sortedIndices.forEach(index => {
                     table.data.splice(index, 1);
                 });
-                
+
                 saveDatabases();
                 selectedRows.clear();
                 loadTableData();
@@ -1225,57 +1302,64 @@
         function loadTableData() {
             const dbName = document.getElementById('dataDb').value;
             const tableName = document.getElementById('dataTable').value;
-            
+
             if (!dbName || !tableName) return;
-            
+
             currentDb = dbName;
             currentTable = tableName;
-            
+
             const table = databases[dbName].tables[tableName];
             const thead = document.querySelector('#dataTable thead');
             const tbody = document.querySelector('#dataTable tbody');
-            
+
             // Create header
-            thead.innerHTML = '<tr><th><input type="checkbox" onclick="toggleAllRows(this)"></th>';
+            let headerHtml = '<tr>';
+            headerHtml += '<th><input type="checkbox" onclick="toggleAllRows(this)"></th>';
             table.columns.forEach(column => {
-                thead.innerHTML += `<th>${column.name} (${column.type})</th>`;
+                headerHtml += `<th>${column.name} (${column.type})</th>`;
             });
-            thead.innerHTML += '<th>Actions</th></tr>';
-            
+            headerHtml += '<th>Actions</th></tr>';
+            thead.innerHTML = headerHtml;
+
             // Create body
             tbody.innerHTML = '';
             if (table.data.length === 0) {
                 tbody.innerHTML = `
-                    <tr>
-                        <td colspan="${table.columns.length + 2}" class="empty-state">
-                            <div>
-                                <i>📊</i>
-                                <h3>No Data Available</h3>
-                                <p>This table is empty. Click "Add Row" to start adding data.</p>
-                            </div>
-                        </td>
-                    </tr>
-                `;
+            <tr>
+                <td colspan="${table.columns.length + 2}" class="empty-state">
+                    <div>
+                        <i>📊</i>
+                        <h3>No Data Available</h3>
+                        <p>This table is empty. Click "Add Row" to start adding data.</p>
+                    </div>
+                </td>
+            </tr>
+        `;
             } else {
                 table.data.forEach((row, index) => {
                     const tr = tbody.insertRow();
-                    tr.innerHTML = `<td><input type="checkbox" onclick="toggleRow(${index})"></td>`;
-                    
+
+                    // Checkbox cell
+                    let td = tr.insertCell();
+                    td.innerHTML = `<input type="checkbox" onclick="toggleRow(${index})">`;
+
+                    // Data cells
                     table.columns.forEach(column => {
-                        const td = tr.insertCell();
+                        let td = tr.insertCell();
                         td.className = 'editable';
                         td.contentEditable = true;
                         td.textContent = row[column.name] || '';
                         td.onblur = () => updateCell(dbName, tableName, index, column.name, td.textContent);
                     });
-                    
-                    tr.innerHTML += `<td><button class="btn btn-danger" onclick="deleteRow('${dbName}', '${tableName}', ${index})">🗑️</button></td>`;
+
+                    // Actions cell
+                    td = tr.insertCell();
+                    td.innerHTML = `<button class="btn btn-danger" onclick="deleteRow('${dbName}', '${tableName}', ${index})">🗑️</button>`;
                 });
             }
-            
+
             updateStatusBar();
         }
-
         function updateCell(dbName, tableName, rowIndex, columnName, value) {
             databases[dbName].tables[tableName].data[rowIndex][columnName] = value;
             saveDatabases();
@@ -1285,19 +1369,19 @@
         function exportTableData() {
             const dbName = document.getElementById('dataDb').value;
             const tableName = document.getElementById('dataTable').value;
-            
+
             if (!dbName || !tableName) {
                 showMessage('Please select database and table', 'error');
                 return;
             }
-            
+
             const table = databases[dbName].tables[tableName];
             let csvContent = 'data:text/csv;charset=utf-8,';
-            
+
             // Add headers
             const headers = table.columns.map(col => col.name);
             csvContent += headers.join(',') + '\n';
-            
+
             // Add data
             table.data.forEach(row => {
                 const values = headers.map(header => {
@@ -1306,7 +1390,7 @@
                 });
                 csvContent += values.join(',') + '\n';
             });
-            
+
             const encodedUri = encodeURI(csvContent);
             const link = document.createElement('a');
             link.setAttribute('href', encodedUri);
@@ -1314,7 +1398,7 @@
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
-            
+
             showMessage(`Table '${tableName}' exported successfully`, 'success');
         }
 
@@ -1353,31 +1437,32 @@
             const tableName = document.getElementById('searchTable').value;
             const columnName = document.getElementById('searchColumn').value;
             const searchValue = document.getElementById('searchValue').value;
-            
+
             if (!dbName || !tableName || !columnName) {
                 showMessage('Please select database, table, and column', 'error');
                 return;
             }
-            
+
             const table = databases[dbName].tables[tableName];
-            const results = table.data.filter(row => 
+            const results = table.data.filter(row =>
                 String(row[columnName]).toLowerCase().includes(searchValue.toLowerCase())
             );
-            
+
             displaySearchResults(results, table.columns);
         }
 
         function displaySearchResults(results, columns) {
             const thead = document.querySelector('#searchResultsTable thead');
             const tbody = document.querySelector('#searchResultsTable tbody');
-            
-            // Create header
-            thead.innerHTML = '<tr>';
+
+            // Build header as a single string
+            let headerHtml = '<tr>';
             columns.forEach(column => {
-                thead.innerHTML += `<th>${column.name}</th>`;
+                headerHtml += `<th>${column.name}</th>`;
             });
-            thead.innerHTML += '</tr>';
-            
+            headerHtml += '</tr>';
+            thead.innerHTML = headerHtml;
+
             // Create body
             tbody.innerHTML = '';
             results.forEach(row => {
@@ -1404,33 +1489,33 @@
             const columnA = document.getElementById('joinColumnA').value;
             const tableB = document.getElementById('joinTableB').value;
             const columnB = document.getElementById('joinColumnB').value;
-            
+
             if (!dbName || !tableA || !columnA || !tableB || !columnB) {
                 showMessage('Please select all join parameters', 'error');
                 return;
             }
-            
+
             const tableAData = databases[dbName].tables[tableA];
             const tableBData = databases[dbName].tables[tableB];
-            
+
             const results = [];
-            
+
             if (currentJoinType === 'inner') {
                 tableAData.data.forEach(rowA => {
                     tableBData.data.forEach(rowB => {
                         if (rowA[columnA] === rowB[columnB]) {
                             const joinedRow = {};
-                            
+
                             // Add table A columns
                             tableAData.columns.forEach(col => {
                                 joinedRow[`${tableA}_${col.name}`] = rowA[col.name];
                             });
-                            
+
                             // Add table B columns
                             tableBData.columns.forEach(col => {
                                 joinedRow[`${tableB}_${col.name}`] = rowB[col.name];
                             });
-                            
+
                             results.push(joinedRow);
                         }
                     });
@@ -1442,17 +1527,17 @@
                         if (rowA[columnA] === rowB[columnB]) {
                             foundMatch = true;
                             const joinedRow = {};
-                            
+
                             // Add table A columns
                             tableAData.columns.forEach(col => {
                                 joinedRow[`${tableA}_${col.name}`] = rowA[col.name];
                             });
-                            
+
                             // Add table B columns
                             tableBData.columns.forEach(col => {
                                 joinedRow[`${tableB}_${col.name}`] = rowB[col.name];
                             });
-                            
+
                             results.push(joinedRow);
                         }
                     });
@@ -1474,17 +1559,17 @@
                         if (rowA[columnA] === rowB[columnB]) {
                             foundMatch = true;
                             const joinedRow = {};
-                            
+
                             // Add table A columns
                             tableAData.columns.forEach(col => {
                                 joinedRow[`${tableA}_${col.name}`] = rowA[col.name];
                             });
-                            
+
                             // Add table B columns
                             tableBData.columns.forEach(col => {
                                 joinedRow[`${tableB}_${col.name}`] = rowB[col.name];
                             });
-                            
+
                             results.push(joinedRow);
                         }
                     });
@@ -1500,34 +1585,35 @@
                     }
                 });
             }
-            
+
             displayJoinResults(results, tableAData.columns, tableBData.columns, tableA, tableB);
         }
 
         function displayJoinResults(results, columnsA, columnsB, tableA, tableB) {
             const thead = document.querySelector('#joinResultsTable thead');
             const tbody = document.querySelector('#joinResultsTable tbody');
-            
-            // Create header
-            thead.innerHTML = '<tr>';
+
+            // Build header as a single string
+            let headerHtml = '<tr>';
             columnsA.forEach(column => {
-                thead.innerHTML += `<th>${tableA}.${column.name}</th>`;
+                headerHtml += `<th>${tableA}.${column.name}</th>`;
             });
             columnsB.forEach(column => {
-                thead.innerHTML += `<th>${tableB}.${column.name}</th>`;
+                headerHtml += `<th>${tableB}.${column.name}</th>`;
             });
-            thead.innerHTML += '</tr>';
-            
+            headerHtml += '</tr>';
+            thead.innerHTML = headerHtml;
+
             // Create body
             tbody.innerHTML = '';
             results.forEach(row => {
                 const tr = tbody.insertRow();
-                
+
                 columnsA.forEach(column => {
                     const td = tr.insertCell();
                     td.textContent = row[`${tableA}_${column.name}`] || '';
                 });
-                
+
                 columnsB.forEach(column => {
                     const td = tr.insertCell();
                     td.textContent = row[`${tableB}_${column.name}`] || '';
@@ -1541,9 +1627,9 @@
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${type}`;
             messageDiv.textContent = message;
-            
+
             container.appendChild(messageDiv);
-            
+
             setTimeout(() => {
                 messageDiv.remove();
             }, 3000);
@@ -1553,11 +1639,11 @@
             const key = `${dbName}.${tableName}`;
             recentTables = recentTables.filter(item => item !== key);
             recentTables.unshift(key);
-            
+
             if (recentTables.length > 5) {
                 recentTables.pop();
             }
-            
+
             localStorage.setItem('offlineDBMS_recentTables', JSON.stringify(recentTables));
         }
 
@@ -1570,18 +1656,18 @@
 
         function exportAllData() {
             let csvContent = 'data:text/csv;charset=utf-8,';
-            
+
             Object.keys(databases).forEach(dbName => {
                 csvContent += `\nDatabase: ${dbName}\n`;
-                
+
                 Object.keys(databases[dbName].tables).forEach(tableName => {
                     const table = databases[dbName].tables[tableName];
                     csvContent += `\nTable: ${tableName}\n`;
-                    
+
                     // Add headers
                     const headers = table.columns.map(col => col.name);
                     csvContent += headers.join(',') + '\n';
-                    
+
                     // Add data
                     table.data.forEach(row => {
                         const values = headers.map(header => {
@@ -1590,11 +1676,11 @@
                         });
                         csvContent += values.join(',') + '\n';
                     });
-                    
+
                     csvContent += '\n';
                 });
             });
-            
+
             const encodedUri = encodeURI(csvContent);
             const link = document.createElement('a');
             link.setAttribute('href', encodedUri);
@@ -1602,7 +1688,7 @@
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
-            
+
             showMessage('Database exported successfully', 'success');
         }
 
@@ -1627,16 +1713,16 @@
             const dbName = document.getElementById('dataDb').value;
             const select = document.getElementById('dataTable');
             select.innerHTML = '<option value="">Choose a table...</option>';
-            
+
             currentDb = dbName;
             currentTable = '';
-            
+
             if (dbName && databases[dbName]) {
                 Object.keys(databases[dbName].tables).forEach(tableName => {
                     select.innerHTML += `<option value="${tableName}">${tableName}</option>`;
                 });
             }
-            
+
             updateStatusBar();
         }
 
@@ -1652,7 +1738,7 @@
             const dbName = document.getElementById('searchDb').value;
             const select = document.getElementById('searchTable');
             select.innerHTML = '<option value="">Choose a table...</option>';
-            
+
             if (dbName && databases[dbName]) {
                 Object.keys(databases[dbName].tables).forEach(tableName => {
                     select.innerHTML += `<option value="${tableName}">${tableName}</option>`;
@@ -1665,7 +1751,7 @@
             const tableName = document.getElementById('searchTable').value;
             const select = document.getElementById('searchColumn');
             select.innerHTML = '<option value="">Choose a column...</option>';
-            
+
             if (dbName && tableName && databases[dbName] && databases[dbName].tables[tableName]) {
                 const table = databases[dbName].tables[tableName];
                 table.columns.forEach(column => {
@@ -1686,10 +1772,10 @@
             const dbName = document.getElementById('joinDb').value;
             const selectA = document.getElementById('joinTableA');
             const selectB = document.getElementById('joinTableB');
-            
+
             selectA.innerHTML = '<option value="">Choose Table A...</option>';
             selectB.innerHTML = '<option value="">Choose Table B...</option>';
-            
+
             if (dbName && databases[dbName]) {
                 Object.keys(databases[dbName].tables).forEach(tableName => {
                     selectA.innerHTML += `<option value="${tableName}">${tableName}</option>`;
@@ -1703,7 +1789,7 @@
             const tableName = document.getElementById('joinTableA').value;
             const select = document.getElementById('joinColumnA');
             select.innerHTML = '<option value="">Choose Column A...</option>';
-            
+
             if (dbName && tableName && databases[dbName] && databases[dbName].tables[tableName]) {
                 const table = databases[dbName].tables[tableName];
                 table.columns.forEach(column => {
@@ -1717,7 +1803,7 @@
             const tableName = document.getElementById('joinTableB').value;
             const select = document.getElementById('joinColumnB');
             select.innerHTML = '<option value="">Choose Column B...</option>';
-            
+
             if (dbName && tableName && databases[dbName] && databases[dbName].tables[tableName]) {
                 const table = databases[dbName].tables[tableName];
                 table.columns.forEach(column => {
@@ -1729,7 +1815,7 @@
         // Setup event listeners
         function setupEventListeners() {
             // Add keyboard support
-            document.addEventListener('keydown', function(e) {
+            document.addEventListener('keydown', function (e) {
                 if (e.key === 'Enter' && e.target.tagName === 'INPUT') {
                     e.target.blur();
                 }
@@ -1737,4 +1823,5 @@
         }
     </script>
 </body>
+
 </html>
